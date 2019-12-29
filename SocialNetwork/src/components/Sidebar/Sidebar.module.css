@@ -1,0 +1,19 @@
+.side_bar {
+display: flex;
+flex-direction: column;
+  grid-area: side_bar;
+  justify-content: flex-start;
+  align-items: left;
+  font-size: 20px;
+  color: pink;
+  background-color: #11939A;
+  height: 1000px;
+  padding-bottom: 20px;
+
+}
+
+.side_bar__link {
+  margin-top: 40px;
+  padding-left: 50px;
+}
+

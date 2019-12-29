@@ -1,0 +1,196 @@
+/* Base - Reset properties */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+  border: 0;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* fonts */
+@font-face {
+  font-family: 'Metro Uber';
+  src: url("../fonts/Metro/Uber/Font.eot");
+  src: url("../fonts/Metro Uber Font.eot") format("embedded-opentype"), url("../fonts/Metro Uber Font.woff") format("woff"), url("../fonts/Metro Uber Font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+.body {
+  font-family: Metro Uber, sans-serif,system-ui; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.d-grid {
+  display: grid; }
+
+.header {
+  background-color: #000; }
+
+.header-wrapper {
+  grid-template-areas: 'header-logo header-menu header-login';
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 70px;
+  color: #fff; }
+
+.header-logo {
+  grid-area: header-logo;
+  align-self: center;
+  justify-self: flex-start; }
+  .header-logo :first-child {
+    font-size: 30px;
+    margin-bottom: 5px; }
+
+.header-menu {
+  grid-area: header-menu;
+  align-self: center;
+  justify-self: center; }
+
+.header-menu__links {
+  color: #fff; }
+
+.header-login {
+  grid-area: header-login;
+  justify-self: flex-end;
+  align-self: center; }
+
+.header-login__link {
+  color: #fff; }
+
+.header-login__btn {
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer; }
+
+.main-content {
+  color: #000; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,6 @@
+.main_content__info {
+  grid-area: main-content;
+  color: #000;
+  height: 1000px;
+  background-color: #fff;
+}
