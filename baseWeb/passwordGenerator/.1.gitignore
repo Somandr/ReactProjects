@@ -1,0 +1,28 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+SocialNetwork/.pnp
+SocialNetwork/.pnp.js
+
+# testing
+SocialNetwork/coverage
+
+# production
+/build
+
+# misc
+SocialNetwork/.DS_Store
+SocialNetwork/.env.local
+SocialNetwork/.env.development.local
+SocialNetwork/.env.test.local
+SocialNetwork/.env.production.local
+
+SocialNetwork/npm-debug.log*
+SocialNetwork/yarn-debug.log*
+SocialNetwork/yarn-error.log*
+.gitignore
+SocialNetwork/node_modules/
+prettier.config.js
+react_typescript/node_modules/
+baseWeb/passwordGenerator/node_modules/
+node_modules/
