@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TodoList from './Todo/TodoList';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let [todos, setTodos] = React.useState([
+        { id: 1, completed: false, title: 'Reach the top' },
+        { id: 2, completed: false, title: 'Taste life' },
+        { id: 3, completed: false, title: 'Enjoy React' },
+    ]);
+
+    function toggleTodo(id) {
+        setTodos(
+        todos = todos.map(todo => {
+            if (todo.id === id) {
+                todo.completed = !todo.completed;
+            }
+            return todo;
+        })
+        )
+    }
+
+    return (
+        <div className="wrapper">
+            <h1>React - ToDo List</h1>
+            <TodoList todos={todos} onToggle={toggleTodo} />
+        </div>
+    );
 }
 
 export default App;

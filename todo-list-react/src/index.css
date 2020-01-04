@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  color: deepskyblue;
+}
+
+.wrapper {
+  padding-top: 5rem;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.rm {
+  /* background: lime; */
+  border-radius: 20%;
+  color: deepskyblue;
+  border: lime solid 1px;
+  outline: none;
+  font-size: 14px;
+}
+
+.done {
+  text-decoration: line-through;
+}
