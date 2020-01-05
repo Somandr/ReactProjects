@@ -1,36 +1,125 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
 h1 {
-  color: deepskyblue;
+    color: deepskyblue;
 }
 
 .wrapper {
-  padding-top: 5rem;
-  margin: 0 auto;
-  width: 600px;
+    padding-top: 5rem;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.wrapper p {
+    color: deeppink;
+}
+
+.wrapper img {
+width: 30px;
 }
 
 .rm {
-  /* background: lime; */
-  border-radius: 20%;
-  color: deepskyblue;
-  border: lime solid 1px;
-  outline: none;
-  font-size: 14px;
+    /* background: lime; */
+    border-radius: 20%;
+    color: lime;
+    border: deepskyblue solid 1px;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.rm:hover {
+    background: linear-gradient(white, deeppink);
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+    border: deeppink solid 1px;
+    color: white;
 }
 
 .done {
-  text-decoration: line-through;
+    text-decoration: line-through;
+}
+
+.addDeal {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid deepskyblue;
+    padding: 0 1rem;
+    outline: none;
+    font-size: 16px;
+    box-shadow: inset 0 0 2px deepskyblue;
+    color: deeppink;
+}
+
+.rb {
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(white, deepskyblue);
+    border: deepskyblue solid 1px;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 17rem;
+    height: 2.2rem;
+}
+
+.rb:hover {
+    background: linear-gradient(white, deeppink);
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+    border: deeppink solid 1px;
+    color: white;
+}
+
+.ib {
+    margin-right: 1rem;
+    outline: none;
+}
+
+.load {
+display: flex;
+justify-content: center;
+margin: 5rem;
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-hourglass:after {
+    content: ' ';
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid deepskyblue;
+    border-color: deepskyblue transparent deepskyblue transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
 }

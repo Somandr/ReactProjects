@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import Context from '../context';
 
 const styles = {
     li: {
@@ -10,19 +11,15 @@ const styles = {
         border: '1px solid deepskyblue',
         borderRadius: '5px',
         marginBottom: '.5rem',
-        color: 'deepskyblue',
+        color: 'deeppink',
     },
-    input: {
-        marginRight: '1rem',
-        outline: 'none',
-    },
-
     strong: {
-        color: 'lime',
+        color: 'deepskyblue',
     },
 };
 
 function TodoItem({ todo, index, onChange }) {
+    const { removeTodo } = useContext(Context);
     let classes = [];
 
     if (todo.completed) {
@@ -35,14 +32,16 @@ function TodoItem({ todo, index, onChange }) {
                 <input
                     type="checkbox"
                     checked={todo.completed}
-                    style={styles.input}
-                    onChange={() => onChange(todo.id)}
+                    onChange={ () => onChange(todo.id) }
+                    className='ib'
                 />
-                <strong style={styles.strong}>{index + 1}</strong>
+                <label style={styles.strong}>{index + 1}</label>
                 &nbsp;
                 {todo.title}
             </span>
-            <button className="rm">&times;</button>
+            <button className="rm" onClick={() => removeTodo(todo.id)}>
+                &times;
+            </button>
         </li>
     );
 }
