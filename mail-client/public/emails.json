@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "topic": "Email 1",
+        "body": "Email 1 body",
+        "recipients": ["aaa@aaa.com"]
+    },
+    {
+        "id": 2,
+        "topic": "Email 1",
+        "body": "Email 2 body",
+        "recipients": ["aaa@aaa.com", "a@test.com"]
+    },
+    {
+        "id": 3,
+        "topic": "Email 3",
+        "body": "Email 3 body",
+        "recipients": ["aaa@aaa.com"]
+    }
+]
