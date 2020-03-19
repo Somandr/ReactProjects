@@ -1,0 +1,21 @@
+.ActiveQuiz {
+  padding: 20px;
+  margin: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #546302;
+  font-size: 24px;
+  border: 2px solid #546302;
+  border-radius: 15px;
+}
+
+.Question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+/*# sourceMappingURL=ActiveQuiz.module.css.map */

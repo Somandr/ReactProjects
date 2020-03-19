@@ -1,0 +1,23 @@
+.AnswerItem {
+  border: 1px solid #546302;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.AnswerItem:hover {
+  background: #546302;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: #ebdc09;
+}
+
+.AnswerItem.success {
+  background: rgba(35, 156, 55, 0.7);
+}
+
+.AnswerItem.error {
+  background: rgba(70, 1, 1, 0.7);
+}
+/*# sourceMappingURL=AnswerItem.module.css.map */

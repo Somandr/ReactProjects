@@ -1,0 +1,27 @@
+.Chain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#ebdc09), to(#576500));
+  background: linear-gradient(90deg, #fff, #ebdc09, #576500 100%);
+}
+
+.Chain h1 {
+  margin-left: 10px;
+  color: #546302;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+  font-size: 48px;
+}
+
+.QuizWrapper {
+  width: 600px;
+}
+/*# sourceMappingURL=Chain.module.css.map */

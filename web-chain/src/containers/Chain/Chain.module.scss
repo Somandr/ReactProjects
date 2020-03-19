@@ -1,0 +1,20 @@
+.Chain {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-grow: 1;
+    width: 100%;
+    background: linear-gradient(90deg, #fff, #ebdc09, #576500 100%);
+}
+
+.Chain h1 {
+    // color: rgb(208, 255, 0);
+    margin-left: 10px;
+    color: rgb(84, 99, 2);
+    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.4);
+    font-size: 48px;
+}
+
+.QuizWrapper {
+  width: 600px;
+}

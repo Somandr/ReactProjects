@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,OAAc;EACrB,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,OAAc;EAChC,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,QAAQ;EACjB,WAAW,EAAE,IAAI;CACpB;;AAED,AAAA,aAAa,CAAC,EAAE,CAAC;EACb,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACZ",
+    "sources": [
+        "FinishedQuiz.module.scss"
+    ],
+    "names": [],
+    "file": "FinishedQuiz.module.css"
+}
