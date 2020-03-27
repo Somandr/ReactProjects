@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './FinishedQuiz.module.scss';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Button from '../UI/Button/Button';
@@ -26,7 +27,7 @@ const FinishedQuiz = props => {
                         icons.push(checkIcon);
                     }
 
-                    console.log(props.results);
+                    console.log(props.onRetry);
 
                     return (
                         <li key={index}>
@@ -51,12 +52,12 @@ const FinishedQuiz = props => {
                 Right answers {successCount} of {props.quiz.length}
             </p>
             <div>
-                <Button onclick={props.onRetry} type="primary">
+                <Button onCxlick={props.onRetry} type="primary">
                     Retry
                 </Button>
-                <Button type="success">
-                    Go Back
-                </Button>
+                <Link to='/'>
+                    <Button type="success">Go Back</Button>
+                </Link>
             </div>
         </div>
     );
