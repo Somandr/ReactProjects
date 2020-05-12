@@ -97,7 +97,7 @@ function HeaderLinks({ ...props }) {
         <List className={classes.list + ' ' + classes.mlAuto}>
             <ListItem className={classes.listItemHeader}>
                 <a href="https://www.facebook.com/semin13" target="_blank">
-                    <FacebookIcon fontSize="large" />
+                    <FacebookIcon fontSize="medium" />
                 </a>
             </ListItem>
             <ListItem className={classes.listItemHeader}>
@@ -105,13 +105,16 @@ function HeaderLinks({ ...props }) {
                     href="https://www.instagram.com/andrew_palms/"
                     target="_blank"
                 >
-                    <InstagramIcon fontSize="large" />
+                    <InstagramIcon fontSize="medium" />
                 </a>
             </ListItem>
 
             <ListItem className={classes.listItemHeader}>
-                <a href="https://www.linkedin.com/in/andrii-somin/" target='_blank'>
-                    <LinkedInIcon fontSize="large" />
+                <a
+                    href="https://www.linkedin.com/in/andrii-somin/"
+                    target="_blank"
+                >
+                    <LinkedInIcon fontSize="medium" />
                 </a>
             </ListItem>
         </List>

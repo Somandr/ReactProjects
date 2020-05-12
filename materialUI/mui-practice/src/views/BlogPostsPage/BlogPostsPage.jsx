@@ -123,7 +123,7 @@ class BlogPostsPage extends Component {
 
     render() {
         const { classes, ...rest } = this.props;
-        const name = <Typography variant="h4">Andrew Somin</Typography>;
+        const name = <Typography variant="h5">Andrew Somin</Typography>;
         const age = 1900 + new Date().getYear() - 1984;
         const isAge = age ? (
             <>
