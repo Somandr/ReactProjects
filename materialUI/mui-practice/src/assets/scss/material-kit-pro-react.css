@@ -192,7 +192,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #EEE;
   color: #3C4858;
   margin: 0;
   font-size: 1rem;
@@ -209,13 +209,12 @@ legend {
     outline: 0; }
 
 a {
-  color: #fff;
+  color: #9c27b0;
   text-decoration: none;
   background-color: transparent; }
   a:hover, a:focus {
-    color: #fff;
-    text-decoration: none;
-  opacity: .8 }
+    color: #89229b;
+    text-decoration: none; }
 
 label {
   font-size: 14px;
@@ -295,7 +294,7 @@ ol, ul, dl {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #995581;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
   transition: transform 0.2s, background-color 0.5s;

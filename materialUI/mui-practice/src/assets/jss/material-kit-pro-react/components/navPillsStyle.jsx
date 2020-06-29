@@ -53,13 +53,13 @@ const navPillsStyle = theme => ({
     borderRadius: "4px"
   },
   tabIcon: {
-    width: "40px",
-    height: "40px",
+    width: "30px",
+    height: "30px",
     display: "block",
-    margin: "10px 0"
+    margin: "15px 0"
   },
   horizontalPills: {
-    width: "20px",
+    width: "100%",
     float: "none !important",
     "& + button": {
       margin: "10px 0"

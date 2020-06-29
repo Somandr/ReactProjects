@@ -43,59 +43,56 @@ class CustomTabs extends React.Component {
       [classes.tabsContainerRTL]: rtlActive
     });
     return (
-        <Card plain={plainTabs}>
-            <CardHeader color={headerColor} plain={plainTabs}>
-                {title !== undefined ? (
-                    <div className={cardTitle}>{'title'}</div>
-                ) : null}
-                <Tabs
-                    classes={{
-                        root: classes.customTabsRoot,
-                        flexContainer: tabsContainer,
-                        indicator: classes.displayNone,
-                    }}
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                    textColor="inherit"
-                >
-                    {tabs.map((prop, key) => {
-                        var icon = {};
-                        if (prop.tabIcon !== undefined) {
-                            icon = {
-                                icon: (
-                                    <prop.tabIcon className={classes.tabIcon} />
-                                ),
-                            };
-                        } else {
-                            icon = {};
-                        }
-                        return (
-                            <Tab
-                                key={key}
-                                classes={{
-                                    root: classes.customTabRoot,
-                                    selected: classes.customTabSelected,
-                                    labelContainer:
-                                        classes.customTabLabelContainer,
-                                    wrapper: classes.customTabWrapper,
-                                    label: classes.customTabLabel,
-                                    // wrapper: tabWrapper,
-                                    // labelIcon: labelIcon,
-                                    // label: classes.label,
-                                    // textColorInherit: labelIcon,
-                                    // // textColorInheritSelected: classes.textColorInheritSelected + " " + labelIcon,
-                                    // selected: classes.textColorInheritSelected + " " + labelIcon,
-                                    // labelContainer: labelContainer
-                                }}
-                                // icon={<prop.tabIcon className={tabIcon} />}
-                                {...icon}
-                                label={prop.tabName}
-                            />
-                        );
-                    })}
-                </Tabs>
-            </CardHeader>
-            {/* <CardHeader
+      <Card plain={plainTabs}>
+        <CardHeader color={headerColor} plain={plainTabs}>
+          {title !== undefined ? (
+            <div className={cardTitle}>{"title"}</div>
+          ) : null}
+          <Tabs
+            classes={{
+              root: classes.customTabsRoot,
+              flexContainer: tabsContainer,
+              indicator: classes.displayNone
+            }}
+            value={this.state.value}
+            onChange={this.handleChange}
+            textColor="inherit"
+          >
+            {tabs.map((prop, key) => {
+              var icon = {};
+              if (prop.tabIcon !== undefined) {
+                icon = {
+                  icon: <prop.tabIcon className={classes.tabIcon} />
+                };
+              } else {
+                icon = {};
+              }
+              return (
+                <Tab
+                  key={key}
+                  classes={{
+                    root: classes.customTabRoot,
+                    selected: classes.customTabSelected,
+                    labelContainer: classes.customTabLabelContainer,
+                    wrapper: classes.customTabWrapper,
+                    label: classes.customTabLabel
+                    // wrapper: tabWrapper,
+                    // labelIcon: labelIcon,
+                    // label: classes.label,
+                    // textColorInherit: labelIcon,
+                    // // textColorInheritSelected: classes.textColorInheritSelected + " " + labelIcon,
+                    // selected: classes.textColorInheritSelected + " " + labelIcon,
+                    // labelContainer: labelContainer
+                  }}
+                  // icon={<prop.tabIcon className={tabIcon} />}
+                  {...icon}
+                  label={prop.tabName}
+                />
+              );
+            })}
+          </Tabs>
+        </CardHeader>
+        {/* <CardHeader
           classes={{
             root: cardHeader,
             title: cardTitle,
@@ -107,15 +104,15 @@ class CustomTabs extends React.Component {
 
           }
         /> */}
-            <CardBody>
-                {tabs.map((prop, key) => {
-                    if (key === this.state.value) {
-                        return <div key={key}>{prop.tabContent}</div>;
-                    }
-                    return null;
-                })}
-            </CardBody>
-        </Card>
+        <CardBody>
+          {tabs.map((prop, key) => {
+            if (key === this.state.value) {
+              return <div key={key}>{prop.tabContent}</div>;
+            }
+            return null;
+          })}
+        </CardBody>
+      </Card>
     );
   }
 }

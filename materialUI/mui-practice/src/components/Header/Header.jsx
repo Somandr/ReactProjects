@@ -30,7 +30,6 @@ class Header extends React.Component {
   handleDrawerToggle() {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
-  
   componentDidMount() {
     if (this.props.changeColorOnScroll) {
       window.addEventListener("scroll", this.headerColorChange);
